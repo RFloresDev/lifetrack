@@ -16,28 +16,28 @@ const menuItems = [
 			{
 				icon: <FcHome />,
 				label: "Home",
-				href: "/",
+				href: "/dashboard",
 				visible: ["admin", "teacher", "student", "parent"],
 			},
 			{
 				icon: <IoFastFoodOutline />,
 				label: "Comidas",
-				href: "/comida",
+				href: "/dashboard/comidas",
 			},
 			{
 				icon: <FcSportsMode />,
 				label: "Ejercicios",
-				href: "/ejercicios",
+				href: "/dashboard/ejercicios",
 			},
 			{
 				icon: <FcCalculator />,
 				label: "Finanzas",
-				href: "/finanzas",
+				href: "/dashboard/finanzas",
 			},
 			{
 				icon: <FcCalendar />,
 				label: "Tareas",
-				href: "/tareas",
+				href: "/dashboard/tareas",
 			},
 		],
 	},

@@ -1,6 +1,6 @@
 import { createClient } from "@/utils/supabase/server";
 import React, { Fragment } from "react";
-import FormComidas from "@/components/comidas/FormComida";
+import FormComida from "./FormComida";
 
 const comidasDia = [
 	"desayuno",
@@ -72,17 +72,14 @@ export default async function ProtectedPage({ params }: Props) {
         picoteo,
         fecha
       `);
-	// peso_botejercdiario;
 
-	// console.log(resultados);
 	if (resultadosError) {
 		console.error("Error fetching categorias:", resultadosError);
 		return <div>Error fetching categorias</div>;
 	}
-	// return <GestorTareas tareas={tareas} />;
 	return (
 		<div className="p-2 w-full bg-blue-600">
-			<FormComidas
+			<FormComida
 				id={+id}
 				categorias={comidasDia}
 				// elementos={imgObjs.filter((imgObj) => imgObj !== null)}
